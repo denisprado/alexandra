@@ -17,7 +17,7 @@ export default function Menu() {
 
 const MenuItem = ({ href, text, path }: { href: string, text: string, path: string }) => {
 	return (
-		<Link href={href} className={`text-secondary hover:text-primary hover:font-bold ${path === '/' + href && 'font-bold text-primary bg-primary/15 hover:text-primary'}`}>
+		<Link href={href} className={` text-secondary hover:text-primary hover:font-bold ${path === '/' + href && 'font-bold text-primary bg-primary/15 hover:text-primary '}`}>
 			<li className="p-4 border-secondary border-dotted border-y-2 border-b border-t   ">
 				{text}
 			</li>
