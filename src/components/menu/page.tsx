@@ -16,10 +16,11 @@ export default function Menu() {
 }
 
 const MenuItem = ({ href, text, path }: { href: string, text: string, path: string }) => {
-
 	return (
-		<li className="p-4 border-secondary border-dotted border-b border-t md:border-t-0 first:border-t text-secondary hover:text-primary hover:font-bold">
-			<Link href={href} className={`${path === '/' + href && 'font-bold text-primary'}`}>{text}</Link>
-		</li>
+		<Link href={href} className={`${path === '/' + href && 'font-bold text-primary'}`}>
+			<li className="p-4 border-secondary border-dotted border-y-2 border-b border-t md:border-t-0 first:border-t text-secondary hover:text-primary hover:font-bold">
+				{text}
+			</li>
+		</Link>
 	)
 }
