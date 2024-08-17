@@ -7,11 +7,20 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      primary: "#CC6666",
+      secondary: "#B58887",
+      background: "#FCF5F0",
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        grow: {
+          "0%": { height: "0" },
+          "100%": { height: "100%" },
+        },
+      },
+      animation: {
+        grow: "grow 1s ease-out forwards",
       },
     },
   },
