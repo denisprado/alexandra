@@ -20,7 +20,7 @@ export default function RootLayout({
 
 	return (
 		<html lang="en">
-			<body className={nunito.className + ' bg-background'}>
+			<body className={nunito.className}>
 				<main className="flex h-screen">
 					<div className="w-4 bg-primary h-full animate-growo2">
 					</div>
